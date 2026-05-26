@@ -1,0 +1,1 @@
+import{t as e}from"./index-qVut2pF7.js";var t=e.create({baseURL:`https://api-frontend-interview-server.metcfire.com.tw`});t.interceptors.request.use(e=>(e.headers.interviewerName=`楊晴卉`,e),e=>Promise.reject(e)),t.interceptors.response.use(e=>Promise.resolve(e),e=>Promise.reject(e));var n=e=>t.post(`/create-account`,e),r=e=>t.get(`/accounts`,{params:e});export{n,r as t};
